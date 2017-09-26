@@ -1,50 +1,117 @@
-
-html {
-  font-family: Helvetica, sans-serif;
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height 80px;
   background-color: white;
-  text-align: center;
-}
-
-h5, .identify, .process, .newyork, .copyright, #nav {
+  font-family: Verdana;
+  font-size: 14px;
   font-weight: bold;
 }
 
-h1, #home, #nav, .newyork, .copyright {
-  color: white;
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
 }
 
-h1 {
-  font-size: 70px;
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
-h5, .newyork {
-  font-size: 23px;
+.logo span {
+  color: MediumAquamarine;
 }
 
-.process {
-  font-size: 32px;
+header nav {
+  padding-right: 40px;
 }
 
-#nav {
-  font-size: 18px;
-  padding-left: 1em;
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-#home, .newyork {
-  background-image: url("../images/the-flatiron-building.png");
-  max-width: 100%;
-  background-size: cover;
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
 }
 
-.newyork, .copyright {
-  padding: 1em;
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
-ul li {
-  list-style-type: none;
-  padding: 4px;
+.logo span {
+  color: MediumAquamarine;
 }
 
-.copyright {
-  background-color: dimgray;
+header nav {
+  padding-right: 40px;
+}
+
+a {
+  color: black;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Main Content Container - this is step 2 */
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* Column widths */
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
